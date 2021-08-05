@@ -2,12 +2,16 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-
-
+    font-family: Flama;
 }
+html {
+    overflow-x: hidden;
+}
+
 body{
     font-family: Lato;
     background-color: #1A1C24;
+    height: 10000px;
 }
 
 nav:first-child{
@@ -15,11 +19,15 @@ nav:first-child{
 }
 .navbar ul li  {
     display: inline-block;
-    color: #6C6C7D;
+    color: #8E8FA1;
     margin-left: 20px;
     font-weight: bold;
-    font-size: 15px;
+    font-size: 12px;
     padding:5px;
+    cursor: pointer;
+}
+.navbar img{
+    width: 17px;
 }
 .navbar1{
     background-color: #24252F;
@@ -29,8 +37,9 @@ nav:first-child{
     padding: 20px;
     color: black;
     cursor: pointer;
-    font-weight: bold;
-    color: white;
+    font-weight: bolder;
+    color: #8E8FA1;
+    font-size: small;
 }
 
 .navbar1 ul li:nth-child(6),
@@ -62,7 +71,7 @@ nav:first-child{
 .navbar1 ul li:nth-child(7){
     border: 1px solid #333541;
     padding: 10px 25px;
-    margin-top: 10px;
+    margin-top: 8px;
     color:#E9B10B ;
     border-radius: 5px;
     background-color: #141419;
@@ -70,7 +79,7 @@ nav:first-child{
 }
 .navbar1 ul li:nth-child(7) img{
     position: relative;
-    top: 4px;
+    top: 3px;
     right: 5px;
 }
 .avatar{
@@ -97,4 +106,123 @@ nav:first-child{
 .navbar1 ul li:nth-child(6):hover,
 .navbar1 ul li:nth-child(2):hover{
  color: #E9B10B;
+}
+.wheel-img{
+    width: 1100px;
+    position: relative;
+    top: 80px;
+    left: 380px;
+    
+    opacity: 0.2;
+    
+}
+
+.wheel-inside{
+    
+    width: 1100px;
+}
+.wheel p{
+   
+    z-index: 20;
+    position: relative;
+    bottom: 10px;
+    text-align: center;
+    font-weight:100;
+    color: #DCDCDC;
+}
+.wheel h1{
+    text-align: center;
+    position: relative;
+    top: 5px;
+    color: #DCDCDC;
+    z-index: 20;
+    opacity: 1;
+    font-size: 27px;
+}
+@font-face {
+   font-family: Flama ;
+    src: url(./fonts/Flama\ Regular.otf);
+}
+.previous-roll p {
+    display: inline-block;
+    position: relative;
+    bottom: 5px;
+    margin-right: 10px;
+}
+.history-roll{
+    position: relative;
+    left: 630px;
+    top: 50px;
+}
+.previous-roll img{
+    width: 25px;
+    
+}
+.last-100 img {
+    width: 15px;
+    position: relative;;
+    bottom: 3px;
+}
+.last-100 div{
+    display: inline-block;
+    color: #87899A;
+    position: relative;
+    bottom: 5px;
+}
+.previous-roll div{
+    color: #87899A;
+    position: relative;
+    
+}
+.last-100, .previous-roll{
+    display: inline-block;
+    text-align: center;
+    font-size: 10px;
+    letter-spacing: 1.5px;
+    font-weight: bolder;
+    
+}
+.last-100{
+    position: relative;
+    bottom: 3px;
+    margin-left: 15px;
+}
+section input{
+    background-image: url(./img/Untitled-4.png);
+    background-repeat: no-repeat;
+    padding-left: 40px;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    background-position-y: 10px ;
+    background-position-x: 5px;
+    position: relative;
+    left: 574px;
+    top: 73px;
+    background-color: #141419;
+    border: 1px solid #333541;
+    border-right: none;
+}
+.add-money-box{
+    border: 1px solid #333541;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    position: relative;
+    top: 37px;
+    left: 763px;
+    width: 510px;
+    height: 36px;
+    background-color: #141419
+    
+}
+.box-content button{
+   width: 47px;
+   height: 20px;
+   margin-left: 5px;
+   background-color: #333541;
+   color: #9293A6;
+   border: none;
+   border-radius: 3px;
+   text-align: center;
+   font-size: 12px;
+   font-weight: bold;
 }
