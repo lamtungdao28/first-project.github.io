@@ -8,10 +8,14 @@ html {
     overflow-x: hidden;
 }
 
+
+
+
 body{
     font-family: Lato;
     background-color: #1A1C24;
-    height: 10000px;
+   
+    margin: 0 auto
 }
 
 nav:first-child{
@@ -31,6 +35,10 @@ nav:first-child{
 }
 .navbar1{
     background-color: #24252F;
+   
+}
+.navbar1 ul {
+    margin-right: 10px;
 }
 .navbar1 ul li {
     display: inline-block;
@@ -40,6 +48,7 @@ nav:first-child{
     font-weight: bolder;
     color: #8E8FA1;
     font-size: small;
+    
 }
 
 .navbar1 ul li:nth-child(6),
@@ -91,6 +100,7 @@ nav:first-child{
 .navbar1 ul li:nth-child(4) a{
     color: white;
     margin-left: 10px;
+    padding-right: 5px;
 }
 .navbar1 ul li:nth-child(4){
     border-radius: 5px;
@@ -107,13 +117,22 @@ nav:first-child{
 .navbar1 ul li:nth-child(2):hover{
  color: #E9B10B;
 }
-.wheel-img{
-    width: 1100px;
+
+.wheel-img-container{
+    height: 300px;
     position: relative;
-    top: 80px;
-    left: 380px;
-    
+    overflow: hidden;
+
+
+}
+.wheel-img{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 1000px;
     opacity: 0.2;
+   
     
 }
 
@@ -125,15 +144,15 @@ nav:first-child{
    
     z-index: 20;
     position: relative;
-    bottom: 10px;
+    bottom: 180px;
     text-align: center;
-    font-weight:100;
+
     color: #DCDCDC;
 }
 .wheel h1{
-    text-align: center;
+  text-align: center;
     position: relative;
-    top: 5px;
+    bottom: 170PX;
     color: #DCDCDC;
     z-index: 20;
     opacity: 1;
@@ -150,9 +169,13 @@ nav:first-child{
     margin-right: 10px;
 }
 .history-roll{
-    position: relative;
-    left: 630px;
-    top: 50px;
+    position: absolute;
+    left: 50%;
+    top: 34%;
+    transform: translate(-50%, 80%);
+   width: 600px;
+  
+ 
 }
 .previous-roll img{
     width: 25px;
@@ -187,6 +210,7 @@ nav:first-child{
     bottom: 3px;
     margin-left: 15px;
 }
+
 section input{
     background-image: url(./img/Untitled-4.png);
     background-repeat: no-repeat;
@@ -197,21 +221,27 @@ section input{
     background-position-x: 5px;
     position: relative;
     left: 574px;
-    top: 73px;
+    bottom: 70px;
     background-color: #141419;
     border: 1px solid #333541;
     border-right: none;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
 }
 .add-money-box{
     border: 1px solid #333541;
     padding-top: 8px;
     padding-bottom: 8px;
     position: relative;
-    top: 37px;
+    bottom: 106px;
     left: 763px;
     width: 510px;
     height: 36px;
-    background-color: #141419
+    background-color: #141419;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+   
+   
     
 }
 .box-content button{
@@ -226,3 +256,22 @@ section input{
    font-size: 12px;
    font-weight: bold;
 }
+.bet{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-185%, 20%);
+}
+/* .test-img{
+    height: 300px;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .test-img img{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 1000px;
+  } */
